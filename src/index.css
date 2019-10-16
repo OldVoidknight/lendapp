@@ -1,0 +1,56 @@
+.App{
+  background-color: #C3DAFE;
+}
+
+/*-----------------------LOGIN----------------------------*/
+
+
+
+
+/*-----------------------!LOGIN----------------------------*/
+
+/*-----------------------NAVBAR----------------------------*/
+.navbar{
+  display: flex;
+  height:7vh;
+  background-color: #2A4365;
+  justify-content: space-between;
+  align-items: center;
+  margin:none;
+  padding: none;
+}
+
+.leftside{
+  font-weight: 1000;
+  color: #ffffff;
+  margin-left: 5px;
+}
+
+.rightside{
+  color: #ffffff;
+  font-weight:400;
+}
+
+.rightside ul{
+  display: flex;
+}
+
+.rightside li{
+  list-style: none;
+  margin-right: 10px;
+}
+
+
+/*-----------------------!NAVBAR----------------------------*/
+
+/*-----------------------DASHBOARD----------------------------*/
+.dashboard{
+  background-color: #C3DAFE;
+  height:97vh;
+  width:99vw;
+}
+
+
+
+
+/*-----------------------!DASHBOARD----------------------------*/
