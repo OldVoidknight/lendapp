@@ -1,6 +1,62 @@
+body{
+  margin:0;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 15px;
+}
+
 .App{
   background-color: #C3DAFE;
 }
+
+.master-button{
+ background:none;
+ border:none;
+ color:#807773;
+ text-align: center;
+ margin-bottom: 5px;
+ padding:10px;
+}
+
+.master-button:hover{
+  border:2px solid white;
+  border-radius: 20px 20px 20px 020px;
+}
+
+.master-button img{
+  width:20px;
+  height:20px;
+  margin-right: 5px;
+}
+
+.master-card{
+  display: flex;
+  height: 400px;
+  width: 1000px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);  
+  position: absolute;
+  left: 300px;
+  top: 60px;
+  flex-direction:column;
+}
+
+.card-header{
+  background-color: #EBF8FF;
+  height:15%;
+  border-bottom: 2px solid #E2E8F0;
+}
+
+.card-content{
+  height:55%;
+}
+
+.card-footer{
+  background-color: #EBF8FF;
+  height: 30%;
+  border-top: 2px solid #E2E8F0;
+}
+
 
 /*-----------------------LOGIN----------------------------*/
 
@@ -13,7 +69,8 @@
 .navbar{
   display: flex;
   height:7vh;
-  background-color: #2A4365;
+  width:100%;
+  background-color: #100e17;
   justify-content: space-between;
   align-items: center;
   margin:none;
@@ -33,11 +90,20 @@
 
 .rightside ul{
   display: flex;
+  align-items: center;
 }
 
 .rightside li{
   list-style: none;
   margin-right: 10px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.rightside img{
+  width:30%;
+  height:70%;
+  filter: invert(100%) brightness(100%) contrast(100%);
 }
 
 
@@ -46,11 +112,49 @@
 /*-----------------------DASHBOARD----------------------------*/
 .dashboard{
   background-color: #C3DAFE;
-  height:97vh;
-  width:99vw;
+  height:100vh;
+  width:100vw;
+}
+
+.dash-inner{
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+}
+
+.main-menu{
+  margin-top:10px;
+  margin-left:10px;
+}
+
+/*-----------------------!DASHBOARD----------------------------*/
+
+/*-----------------------LOANFORM----------------------------*/
+.loan-container{
+  display:flex;
+  justify-content: space-evenly;
+}
+
+.loan-request{
+  height:100%;
+  width:33%;
+}
+
+.loan-request label{
+  display: inline-block;
+}
+
+.loan-request input{
+  width:70%;
+}
+
+.loan-details{
+  width:35%;
+}
+
+.loan-details label{
+  display: inline-block;
 }
 
 
-
-
-/*-----------------------!DASHBOARD----------------------------*/
+/*-----------------------!LOANFORM----------------------------*/

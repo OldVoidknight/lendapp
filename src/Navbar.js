@@ -8,10 +8,22 @@ function Navbar(){
             </div>
             <div className='rightside'>
                 <ul>
-                    <li>Dashboard</li>
-                    <li>Loan</li>
-                    <li>Database</li>
-                    <li>Report</li>
+                    <li>
+                        <img src={require('./assets/dashboard.png')} alt=''/>
+                        Dashboard
+                    </li>
+                    <li>
+                        <img src={require('./assets/loan.png')} alt=''/>
+                        Loan
+                    </li>
+                    <li>
+                        <img src={require('./assets/database.png')} alt=''/>
+                        Database
+                    </li>
+                    <li>
+                        <img src={require('./assets/report.png')} alt=''/>
+                        Report
+                    </li>
                 </ul>
             </div>
         </div>
