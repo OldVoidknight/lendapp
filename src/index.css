@@ -48,7 +48,8 @@ body{
 }
 
 .card-content{
-  height:55%;
+  height:60%;
+  padding:20px;
 }
 
 .card-footer{
@@ -57,11 +58,110 @@ body{
   border-top: 2px solid #E2E8F0;
 }
 
+input{
+  background-color: transparent;
+  width: 100%;
+  color: #4a5568;
+  line-height: 1.25;
+  border-top-width: 0;
+  border-left-width: 0;
+  border-right-width: 0;
+  border-bottom-width: 2px;
+  border-color: #100e17;
+  margin-bottom: 10px;
+}
 
+input:focus{
+  outline: none;
+}
+
+select{
+  appearance: none;
+  width:100%;
+  background-color: white;
+  border-color: #cbd5e0;
+  border-radius: .25rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin-bottom: 5px;
+  margin-top:5px;
+}
+
+select:hover{
+  border-color: #a0aec0;
+  cursor: pointer;
+}
+
+select:focus{
+  outline: none;
+}
 /*-----------------------LOGIN----------------------------*/
+.login-container{
+  background-color: #C3DAFE;
+  height:100vh;
+  width:100vw;
+  display: flex;
+}
 
+.login-wrapper{
+  display: flex;
+  height: 300px;
+  width: 350px;
+  background-color: #17141d;
+  border-radius: 10px;
+  box-shadow: -1rem 0 3rem #000;
+  margin-left: 500px;
+  margin-top: 200px;
+  color:white;
+  flex-direction: column;
+}
 
+.login-input{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 50%;
+  margin-left:5px;
+  margin-top:20px;
+}
 
+.login-input input{
+  background-color: white;
+  padding:5px;
+  width:90%;
+}
+
+.login-input label{
+  padding: 5px;
+  font-weight:700;
+}
+
+.login-button{
+  margin-left:150px;
+  margin-top:20px;
+}
+
+.login-button button{
+  padding:15px;
+  border-radius:1rem;
+  border:1px solid white;
+  background-color: #100e17;
+  color:white;
+}
+
+.login-button button:hover{
+  transition: 0.4s ease-out;
+  transform: translateY(-10px);
+  background-color:white;
+  color:#100e17;
+}
+
+.login-button button:focus{
+  outline: none;
+}
 
 /*-----------------------!LOGIN----------------------------*/
 
@@ -142,6 +242,7 @@ body{
 
 .loan-request label{
   display: inline-block;
+  margin-bottom: 5px;
 }
 
 .loan-request input{
