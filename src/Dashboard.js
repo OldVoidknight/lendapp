@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from './Navbar';
 import MainMenu from './MainMenu';
 import Card from './Card';
+import Footer from './Footer'
 
 
 function Dashboard(){
@@ -12,6 +13,7 @@ function Dashboard(){
                 <MainMenu/>
                 <Card/>
             </div>
+            <Footer></Footer>
         </div>
     )
 }

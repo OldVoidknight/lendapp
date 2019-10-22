@@ -1,4 +1,5 @@
 import React from 'react';
+import Footer from './Footer';
 
 function LoginPage(){
     return (
@@ -14,6 +15,7 @@ function LoginPage(){
                     <button>Login</button>
                 </div>
             </div>
+            <Footer/>
         </div>
     )
 }
