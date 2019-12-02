@@ -5,13 +5,13 @@ body{
 }
 
 .App{
-  background-color: #bee3f8;
+  background-color: #553c9a;
 }
 
 .master-button{
  background:none;
  border:none;
- color:#807773;
+ color:#fff;
  text-align: center;
  margin-bottom: 5px;
  padding:10px;
@@ -30,7 +30,7 @@ body{
 
 .master-card{
   display: flex;
-  height: 400px;
+  height: 500px;
   width: 1000px;
   background-color: white;
   border-radius: 10px;
@@ -42,26 +42,57 @@ body{
 }
 
 .card-header{
-  background-color: #EBF8FF;
+  background-color: #805ad5;
   height:15%;
   border-bottom: 2px solid #E2E8F0;
 }
 
-.card-content{
-  height:60%;
-  padding:20px;
+.card-header button{
+  background: transparent;
+  border: 1px solid #100e17;
+  position: relative;
+  height:100%;
+  width: 120px;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
 }
 
-.card-footer{
-  background-color: #EBF8FF;
-  height: 30%;
-  border-top: 2px solid #E2E8F0;
+.card-header button:after{
+  content: "";
+  background: #100e17;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px!important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.card-header button:active:after{
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s;
+}
+
+.card-header button:focus{
+  outline:none;
+}
+
+.card-content{
+  height:80%;
+  padding:20px;
 }
 
 input{
   background-color: transparent;
   width: 100%;
-  color: #4a5568;
+  color: #000;
   line-height: 1.25;
   border-top-width: 0;
   border-left-width: 0;
@@ -98,7 +129,7 @@ select:focus{
   outline: none;
 }
 
-.error-modal{
+.info-modal{
   position: fixed; 
   z-index: 1; 
   padding-top: 70px;
@@ -111,7 +142,7 @@ select:focus{
   background-color: rgba(0,0,0,0.4);
 }
 
-.error-modal-content{
+.info-modal-content{
   background-color: #fefefe;
   margin: 15% auto; /* 15% from the top and centered */
   padding: 20px;
@@ -123,7 +154,7 @@ select:focus{
   animation-duration: 0.4s
 }
 
-.error-modal-content button{
+.info-modal-content button{
   margin-left:100px;
   padding: 5px;
   border-radius: 2px;
@@ -145,7 +176,7 @@ select:focus{
 
 /*-----------------------LOGIN----------------------------*/
 .login-container{
-  background-color: #bee3f8;
+  background-color: #553c9a;
   height:100vh;
   width:100vw;
   display: flex;
@@ -257,7 +288,7 @@ select:focus{
 
 /*-----------------------DASHBOARD----------------------------*/
 .dashboard{
-  background-color: #bee3f8;
+  background-color: #553c9a;
   height:100vh;
   width:100vw;
 }
@@ -308,18 +339,46 @@ select:focus{
 
 /*-----------------------REPORT----------------------------*/
 .report-container{
-  background-color: #bee3f8;
+  background-color: #553c9a;
   height:100vh;
   width:100vw;
 }
 
-
+.report-content-wrapper{
+  width:600px;
+  margin-left:400px;
+}
 
 
 
 
 /*-----------------------!REPORT----------------------------*/
 
+/*-----------------------DATABASE----------------------------*/
+
+.data-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:none;
+  margin:0;
+}
+
+.stats-visual{
+  display: flex;
+  flex-direction: column;
+}
+
+.graph-visual{
+  border: 1px solid grey;
+  width: 70%;
+  height: 300px;
+  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+
+
+
+/*-----------------------!DATABASE----------------------------*/
 
 /*-----------------------FOOTER----------------------------*/
 .master-footer{

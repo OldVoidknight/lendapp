@@ -1,11 +1,11 @@
 import React from 'react';
 
-function ErrorMod(props){
+function InfoMod(props){
    
     
     return (
-        <div className='error-modal'>
-            <div className='error-modal-content'>
+        <div className='info-modal'>
+            <div className='info-modal-content'>
             {props.info_text}
             <button onClick={props.onClick}>Close</button>
             </div>
@@ -13,4 +13,4 @@ function ErrorMod(props){
     )
 }
 
-export default ErrorMod;
+export default InfoMod;

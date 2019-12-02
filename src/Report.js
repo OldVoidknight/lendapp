@@ -1,5 +1,5 @@
 import React,{useState} from 'react';
-import ErrorMod from './ErrorMod';
+import Navbar from './Navbar';
 
 
 function Report(){
@@ -10,10 +10,13 @@ function Report(){
     
     return (
         <div className='report-container'>
-            {anError ? <ErrorMod info_text='This is an error' onClick={()=>setError(false)}/>:null}
+            <Navbar/>
             <div className='report-content-wrapper'>
                 <div className='report-content'>
                 <button onClick={popError}>Show Error</button>
+                <input></input>
+                <input></input>
+                <input></input>
                 </div>
             </div>
         </div>

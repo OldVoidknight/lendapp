@@ -13,14 +13,6 @@ function Navbar(){
                         Dashboard
                     </li>
                     <li>
-                        <img src={require('./assets/loan.png')} alt=''/>
-                        Loan
-                    </li>
-                    <li>
-                        <img src={require('./assets/database.png')} alt=''/>
-                        Database
-                    </li>
-                    <li>
                         <img src={require('./assets/report.png')} alt=''/>
                         Report
                     </li>
